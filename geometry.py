@@ -5,12 +5,15 @@ class Problems:
         self.user_answer     = None
         self.correct_answer  = None
         self.correct_answers = 0
+        self.MAXIMUM_NUMBER_OF_QUESTIONS = 2
 
     def getQuestion(self):
         self.user_answer    = None
         self.correct_answer = None
         self.displayCurrentScore()
-        self.perimeterOfASquare()
+
+        self.random_value = random.randint(0, (self.MAXIMUM_NUMBER_OF_QUESTIONS - 1))
+        self.findQuestion(self.random_value)
 
     def setAnswer(self):
         self.user_answer = input(">> ")
