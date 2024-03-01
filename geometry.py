@@ -5,6 +5,12 @@ class Problems:
 
     def getQuestion(self):
         pass
+    def checkIfCorrect(self):
+        if (self.user_answer == self.correct_answer):
+            return True
+        elif (self.user_answer != self.correct_answer):
+            return False
+    
     def setAnswer(self):
         self.user_answer = float(input(">> "))
 
