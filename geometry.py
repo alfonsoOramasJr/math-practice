@@ -27,6 +27,8 @@ class Problems:
         match random_value:
             case 0:
                 self.perimeterOfASquare()
+            case 1:
+                self.areaOfASquare()
 
     def perimeterOfASquare(self):
         side_length = random.randint(0, 24)
@@ -46,6 +48,26 @@ class Problems:
               """
         self.correct_answer = 4 * side_length
         print(perimeterProblem)
+    
+    def areaOfASquare(self):
+        side_length = random.randint(0, 10)
+        areaProblem = f"""
+
+              The following is a square, and one
+              of the sides is equal to {side_length}.
+
+              Find the area of the square.
+                -----------------
+                |  |         |  |
+                |---         ---|
+                |               | 
+                |__           __|
+                |  |         |  |
+                -----------------
+                        {side_length} 
+        """
+        self.correct_answer = pow(side_length, 2)
+        print(areaProblem)
 
 def main():
     problem = Problems(100)
