@@ -1,11 +1,12 @@
 class Problems:
     def __init__(self):
-        self.answer = 0
+        self.user_answer = 0
+        self.correct_answer = None
 
     def getQuestion(self):
         pass
     def setAnswer(self):
-        self.answer = float(input(">> "))
+        self.user_answer = float(input(">> "))
 
 def main():
     problem = Problems()
