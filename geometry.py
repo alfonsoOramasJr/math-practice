@@ -1,3 +1,4 @@
+import random
 class Problems:
     def __init__(self):
         self.user_answer = 0
@@ -6,6 +7,23 @@ class Problems:
 
     def getQuestion(self):
         pass
+    def perimeterOfASquare(self):
+        side_length = random.randint(0, 24)
+        perimeterProblem = f"""
+              The following is a square, and one
+              of the sides is equal to {side_length}.
+
+              Find the perimeter of the square.
+                ------------
+                |          |
+                |          |
+                |          | {side_length}
+                |          |
+                ------------
+              """
+        self.correct_answer = 4 * side_length
+        return perimeterProblem
+    
     def checkIfCorrect(self):
         if (self.user_answer == self.correct_answer):
             return True
