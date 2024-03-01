@@ -23,6 +23,11 @@ class Problems:
     def displayCurrentScore(self):
         print(f"\t\t\tcorrect answers [{self.correct_answers}/{self.cycles}]")
 
+    def findQuestion(self, random_value):
+        match random_value:
+            case 0:
+                self.perimeterOfASquare()
+
     def perimeterOfASquare(self):
         side_length = random.randint(0, 24)
         perimeterProblem = f"""
