@@ -2,6 +2,7 @@ class Problems:
     def __init__(self):
         self.user_answer = 0
         self.correct_answer = None
+        self.QUESTION_POOL = 1
 
     def getQuestion(self):
         pass
