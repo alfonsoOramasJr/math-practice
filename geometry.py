@@ -47,4 +47,5 @@ def main():
     for problems in range(problem.cycles):
         problem.getQuestion()
         problem.setAnswer()
+        problem.checkIfUserIsCorrect()
 main()
